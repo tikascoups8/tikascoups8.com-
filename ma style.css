@@ -1,0 +1,386 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#760404;
+    overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* ================= NAVBAR ================= */
+.nav{
+    background:#e5e5e5;
+    padding:25px 0;
+    position: fixed;
+}
+nav{
+    background:#e5e5e5;
+    padding:25px 0;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000; /* biar gak ketutup konten */
+}
+
+/* container tengah */
+.nav-inner{
+width:100%;
+    padding:0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-inner a{
+    text-decoration:none;
+    color:#000000;
+
+    font-size:22px;
+    font-weight:600;
+    text-transform:lowercase;
+
+    transition:0.2s;
+}
+.nav-inner a:hover{
+    color:black;
+    transform:translateY(-2px);
+}
+.hero{
+    min-height:100vh;
+    display:flex;
+}
+
+
+/* kiri */
+.hero-left{
+    width:50%;
+    display:flex;
+    justify-content:center;   /* tengah horizontal */
+    align-items:center;       /* tengah vertical */
+}
+.hero-card{
+    width:400px;
+    height:280px;
+    border-radius:35px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+}
+.hero-card h1{ 
+    font-family: 'Playfair Display';
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+
+}
+
+/* kanan */
+.hero-right{
+    width:50%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.hero-right img {
+    width:100%;
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.hero-right img:hover {
+    transform:scale(1.03);
+}
+
+
+/* ================= ABOUT SECTION ================= */
+.about{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* card teks */
+.about-card{
+    width:650px;
+    padding:50px;
+    border-radius:40px;
+    text-align:center;
+
+    font-size:24px;
+    font-weight:bold;
+
+    background:linear-gradient(
+        to right,
+        #898181,
+        #654d4d 20%,
+        #fffefe 80%,
+        #dcdcdc
+    );
+}
+
+.about-card p{
+    line-height:1.6;
+}
+
+
+/* ================= TEXT ================= */
+.text h1{
+    font-family:'Playfair Display', serif;
+    font-size:80px;
+}
+.section3 {
+  background: #760404;
+  min-height: 100vh;
+
+  display: flex;              /* bikin bisa center */
+  justify-content: center;    /* tengah horizontal */
+  align-items: center;        /* tengah vertical */
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+  justify-items: center;   /* INI PENTING */
+}
+
+/* CARD STYLE */
+.info-card {
+  padding: 35px;
+  border-radius: 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  background-color: #8f7676;
+}
+
+.card h2 {
+  color: #1b1456;
+  letter-spacing: 2px;
+}
+
+.card ul {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.card li {
+  margin: 8px 0;
+}
+/* POSISI */
+.achievement {
+  left: 0;
+  top: 40px;
+}
+
+.hobby {
+  right: 0;
+  bottom: 40px;
+}
+
+/* FOTO KIRI */
+.side-photo {
+  left: 120px;
+  bottom: 40px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+/* MUSIC PLAYER */
+.music-player {
+  right: 120px;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cover {
+  width: 180px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  background: #170202;
+  padding: 8px 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.controls button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+  }
+
+.controls button:hover {
+  transform: scale(1.2);
+}
+.section4{
+    min-height:100vh;
+    padding:120px 50px;
+    background:#760404
+}
+
+.search-bar{
+    width:350px;
+    background:#eee;
+    padding:15px 25px;
+    border-radius:30px;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    margin-bottom:60px;
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:60px;
+}
+
+.wish-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+}
+.left{
+    text-align:center;
+}
+
+.label{
+    background:#d8c2a8;
+    padding:8px 20px;
+    margin-bottom:15px;
+    border-radius:5px;
+    font-weight:bold;
+    display:inline-block;
+}
+.left img{
+    width:220px;
+    background:white;
+    padding:15px;
+}
+
+.bubble{
+    width:400px;
+    padding:40px;
+    background:#a86767;
+    border-radius:40px;
+    font-size:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+.music-box{
+    width:250px;              /* kasih lebar tetap */
+    display:flex;
+    flex-direction:column;
+    align-items:center;       /* ini yang bikin tengah */
+    justify-content:center;
+    text-align:center;
+}
+
+.music-box .cover{
+    width:220px;
+    border-radius:20px;
+    display:block;
+    margin:0 auto;            /* tambahan biar benar-benar center */
+}
+.music-box audio{
+    width:220px;
+    margin-top:15px;
+}
+.section5{
+    background-color: #760404;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: black;
+}
+.side{
+    font-size: 40px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.left{
+    margin-right: 20px;
+}
+.right{
+    margin-left: 20px;
+}
+
+.content{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 15px;
+    justify-content: center;
+}
+.grid img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.icons{
+    margin-top: 30px;
+}
+
+.icons img{
+    width: 60px;
+    margin: 0 15px;
+}
+.icons img {
+    width: 70px;
+    margin: 0 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+.icons img:active {
+    transform: scale(0.9);
+}

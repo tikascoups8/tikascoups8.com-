@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="ma style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="nav-inner">
+      <a href="#cool">^home^</a>
+        <a href="#intro-text">^introduce^</a>
+        <a href="#achievement">^H&A^</a>
+        <a href="#what u want">^what i want^</a>
+        <a href="#ad">^admire^</a>
+    </nav>
+</header>
+<section class="hero" id="cool">
+    <div class="hero-left">
+        <div class="hero-card">
+            <h1>Who<br>I’m...</h1>
+        </div>
+    </div>
+
+    <div class="hero-right">
+      <a href="https://instagram.com/karttt.__" target="_blank">
+        <img src="tik1.jpeg" alt="foto">
+        </a>
+    </div>
+</section>
+<!-- SECTION 2 -->
+<section class="about" id="intro-text">
+    <div class="about-card">
+        <h2>hai hello assalamualaikum</h2>
+
+        <p>
+            lemme introduce myself <br>
+            my name is Kartika Sari Dewi <br>
+            fun fact I'm from Yogya but I live in Bekasi <br>
+            15 y.o 
+            
+        </p>
+    </div>
+</section>
+<section class="section3" id="achievement">
+  <div class="container">
+
+    <!-- ACHIEVEMENT -->
+    <div class="info-card achievement">
+      <h2>ACHIEVMENT</h2>
+      <ul>
+        <li>Tamat 1000++ lvl puzzle svt</li>
+        <li>Bendahara BEST 5&6</li>
+        <li>hidup, bernapas</li>
+        <h4>ATEE</h4>
+      </ul>
+    </div>
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+      <img src="I Thought I Saw Your Face Today.jpg" class="cover" id="cover">
+
+      <audio id="song1" controls>
+        <source src="I Thought I Saw Your Face Today She Him.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <!-- FOTO KIRI BAWAH -->
+    <img src="Hello jadoo (3).jpg" class="side-photo">
+
+    <!-- HOBBY -->
+    <div class="info-card hobby">
+      <h2>HOBBY</h2>
+      <p>
+        I usually cook in my spare time or I want to try a new recipe.
+        I also like watching cartoon Hello Jadoo cha cha cha ^^
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- SECTION 4 -->
+<section class="section4" id="what u want">
+
+  <div class="search-bar">
+    🔍 <span>what I want...|</span>
+  </div>
+  <div class="wish-content">
+   <div class="left">
+    <a href="https://instagram.com/utokyo_pr" target="_blank">
+    <img src="ut.jpg" alt="Tokyo University">
+    </a>
+</div>
+
+    <div class="bubble">
+      <p>
+        bismillah i accepted at the Tokyo University,
+        and I learned try new things in that country.
+        good luck.
+      </p>
+    </div>
+ <!-- RIGHT (MUSIC) -->
+    <div class="music-box">
+        <img src="download (2).jpg" class="cover">
+
+        <audio id="song2" controls>
+            <source src="coer.mpeg" type="audio/mpeg">
+            </audio>
+    </div>
+
+</div>
+  </div>
+
+</section>
+<section id="section5" class="section5">
+    <div class="side left">S<br>E<br>C<br>R<br>E<br>T</div>
+
+    <div class="content"id="ad">
+        <div class="grid">
+          <a href="https://instagram.com/cortis" target="_blank">
+            <img src="cortiz.jpg" alt="Foto grup laki-laki dengan seragam putih dan dasi hitam">
+            </a>
+            <img src="california.jpg" alt="california">
+            <img src="france.jpg" alt="france">
+            <a href="https://instagram.com/lngshot4sho" target="_blank">
+            <img src="lngshot.jpg" alt="foto grup laki-laki dengan jas coklat">
+            </a>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.roblox.com/users/8399812185/profile" target="_blank">
+          <img src="roblox.jpg" alt="roblox">
+          </a>
+            <a href="https://www.tiktok.com/@tiks_67" target="_blank">
+            <img src="TikTok LIVE.jpg" alt="tiktok">
+            </a>
+            <a href="https://discord.com/users/1279427777455456332" target="_blank">
+            <img src="Discord_Black_Logo_PNG_Transparent_With_Clear_Background_ID_471547___TopPNG-removebg-preview.png" alt="discord">
+            </a>
+        </div>
+         </div>
+
+    <div class="side right">A<br>D<br>M<br>I<br>R<br>E</div>
+</section>
+
+<script>
+const song1 = document.getElementById("song1");
+const song2 = document.getElementById("song2");
+
+song1.addEventListener("play", function() {
+    song2.pause();
+});
+
+song2.addEventListener("play", function() {
+    song1.pause();
+});
+</script>
+</body>
+</html>
